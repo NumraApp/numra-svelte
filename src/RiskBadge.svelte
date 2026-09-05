@@ -1,9 +1,9 @@
 <script>
-  import { badgeParts, styleString } from '@numra/browser';
+  import { badgeParts, styleString } from '@getnumra/browser';
 
   /* A presentational badge. No fetching, no key, no opinion about your
      layout. The label, the colours and the geometry come from
-     @numra/browser, shared with the React and Vue packages — see there for
+     @getnumra/browser, shared with the React and Vue packages — see there for
      why blacklisted outranks the band and why unrated has its own words.
 
      `export let` rather than $props(), so this compiles on Svelte 4 and 5

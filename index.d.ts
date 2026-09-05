@@ -1,5 +1,5 @@
 import type { Readable } from 'svelte/store';
-import type { BrowserCheck, NumraRequestError } from '@numra/browser';
+import type { BrowserCheck, NumraRequestError } from '@getnumra/browser';
 
 export interface NumraCheckState {
   status: 'idle' | 'loading' | 'success' | 'error';
@@ -34,5 +34,5 @@ export declare function readonlyCheck(check: NumraCheckStore): Readable<NumraChe
 
 export declare const RiskBadge: import('svelte').ComponentType;
 
-export { riskStateFor, RISK_STATES, NumraRequestError } from '@numra/browser';
-export type { BrowserCheck, RiskState } from '@numra/browser';
+export { riskStateFor, RISK_STATES, NumraRequestError } from '@getnumra/browser';
+export type { BrowserCheck, RiskState } from '@getnumra/browser';

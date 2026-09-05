@@ -1,13 +1,13 @@
 import { readable, writable, get } from 'svelte/store';
-import { createCheckController, IDLE } from '@numra/browser';
+import { createCheckController, IDLE } from '@getnumra/browser';
 
 /* ═══════════════════════════════════════════════════════════════════════════
-   @numra/svelte — the browser half, Svelte-shaped
+   @getnumra/svelte — the browser half, Svelte-shaped
    ───────────────────────────────────────────────────────────────────────────
    No apiKey option, and no way to add one: this package talks to YOUR
    backend, the endpoint one of the server packages mounts.
 
-   Debounce, abort and stale-answer rejection live in @numra/browser's
+   Debounce, abort and stale-answer rejection live in @getnumra/browser's
    controller, shared with React and Vue — see there for why a late answer is
    dropped by identity rather than by catching AbortError.
 

@@ -1,5 +1,5 @@
 {
-  "name": "@numra/svelte",
+  "name": "@getnumra/svelte",
   "version": "1.0.0",
   "description": "Svelte store and components for Numra. Calls your own backend — never holds an API key.",
   "license": "MIT",
@@ -23,7 +23,7 @@
     "./RiskBadge.svelte": "./src/RiskBadge.svelte"
   },
   "scripts": { "test": "node --test \"test/*.test.js\"" },
-  "dependencies": { "@numra/browser": "^1.0.0" },
+  "dependencies": { "@getnumra/browser": "^1.0.0" },
   "peerDependencies": { "svelte": ">=4" },
   "devDependencies": { "svelte": "^5.19.0" },
   "publishConfig": { "access": "public", "provenance": true }

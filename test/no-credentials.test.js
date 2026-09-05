@@ -35,13 +35,13 @@ test('no source file can reach the Numra API directly', () => {
   for (const { f, s } of files) {
     assert.ok(!/api\.numra\.ma/.test(s), `${f} targets the Numra API directly`);
     assert.ok(!/Authorization/i.test(s), `${f} sets an Authorization header`);
-    assert.ok(!/\bfetch\s*\(/.test(s), `${f} makes its own request instead of using @numra/browser`);
+    assert.ok(!/\bfetch\s*\(/.test(s), `${f} makes its own request instead of using @getnumra/browser`);
   }
 });
 
-test('the package does not depend on @numra/core', () => {
+test('the package does not depend on @getnumra/core', () => {
   const deps = { ...pkg.dependencies, ...pkg.devDependencies };
-  assert.ok(!('@numra/core' in deps), '@numra/core must not be a dependency of a browser package');
+  assert.ok(!('@getnumra/core' in deps), '@getnumra/core must not be a dependency of a browser package');
 });
 
 test('the component is published as source, so a consumer can compile it', () => {
