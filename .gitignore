@@ -1,0 +1,20 @@
+# Installed, not authored. The lockfile is what pins the tree; node_modules is
+# a build product of it.
+node_modules/
+
+# `npm pack` output. Committing one means the next reader cannot tell which
+# tarball was actually published.
+*.tgz
+
+# npm's own noise.
+npm-debug.log*
+.npm/
+
+# Editor and OS droppings that have no business in a published repo.
+.DS_Store
+*.swp
+
+# test/component.test.js compiles RiskBadge.svelte to a real file so it can be
+# imported as a module — Node cannot import a string. It is regenerated every
+# run, and committing it would let a stale compile pass the test.
+test/.compiled-*.js
